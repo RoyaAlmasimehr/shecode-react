@@ -1,18 +1,15 @@
 import React, { useState } from "react";
-import axios from "axios";
-import "./weather.css";
+import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
-
-import WeatherInfo from "./WearherInfo";
+import axios from "axios";
+import "./Weather.css";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
-    console.log(response.data);
     setWeatherData({
-      coord: response.data.coord,
       ready: true,
       coordinates: response.data.coord,
       temperature: response.data.main.temp,
@@ -69,6 +66,6 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return "Loading......";
+    return "Loading...";
   }
 }
