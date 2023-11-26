@@ -10,10 +10,10 @@ function App() {
       <footer>
         This is project was coded by Roya Almasimehr and is{" "}
         <a href="https://github.com/RoyaAlmasimehr/weather-react">
-          open-sourced on GitHub and{" "}
-          <a href="https://sweet-cranachan-61f88c.netlify.app/">
-            hosted on Netlify
-          </a>
+          open-sourced on GitHub{" "}
+        </a>and
+        <a href="https://sweet-cranachan-61f88c.netlify.app/">
+          hosted on Netlify
         </a>
       </footer>
     </div>
